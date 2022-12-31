@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Password Generator</title>
+      <link rel="stylesheet" href="./css/style.css" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Inter:wght@400;700&family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500;1,700&display=swap"
+         rel="stylesheet"
+      />
+   </head>
+   <body>
+      <div class="wrapper">
+         <header class="header">
+            <h1 class="header__title">Password Generator</h1>
+         </header>
+         <main class="main">
+            <div class="password-block">
+               <div class="password-block__container">
+                  <p class="password-block__title">Resist hacks!</p>
+                  <input
+                     class="password-block__input"
+                     type="text"
+                     value="password here"
+                     disabled
+                  />
+                  <div class="password-block__action-block">
+                     <p class="action-block__title">Strong</p>
+                     <div class="action-block__btn-container">
+                        <button class="action-block__btn-regenerate">
+                           Regenerate
+                        </button>
+                        <button class="action-block__btn-copy">Copy</button>
+                     </div>
+                  </div>
+                  <div class="password-block__configuration">
+                     <p class="configuration__length-text">
+                        Length (<span>20</span>)
+                     </p>
+                     <input
+                        type="range"
+                        min="6"
+                        max="32"
+                        class="configuration__input-length"
+                     />
+                     <div class="configuration__password-parameters">
+                        <input
+                           type="checkbox"
+                           data-type="letters"
+                           checked
+                           name="parameters"
+                        />
+                        <span>Letters(e.g. Aa)</span>
+                        <input
+                           type="checkbox"
+                           data-type="numbers"
+                           checked
+                           name="parameters"
+                        />
+                        <span>Digits(e.g. 345)</span>
+                        <input
+                           type="checkbox"
+                           data-type="symbols"
+                           name="parameters"
+                        />
+                        <span>Symbols(@&$!#?)</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </main>
+      </div>
+      <script src="./js/main.js"></script>
+   </body>
+</html>

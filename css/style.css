@@ -1,0 +1,108 @@
+@import url(./reset.css);
+html,
+body {
+   height: 100%;
+}
+.wrapper {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   background: #f8f8f8;
+   transition: 1s;
+}
+/* ----------------------------------------------------------- HEADER */
+.header {
+   width: 100%;
+   height: 80px;
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+}
+.header__title {
+   font-size: 35px;
+}
+
+/* ----------------------------------------------------------- HEADER */
+/* ----------------------------------------------------------- MAIN */
+.main {
+   flex: 1 1 auto;
+   display: flex;
+   justify-content: center;
+}
+/* ----------------------------------------------------------- MAIN */
+/* ----------------------------------------------------------- PASSWORD */
+.password-block {
+   margin-top: 70px;
+   width: 70%;
+   padding: 35px;
+   height: 450px;
+   border: 1px solid black;
+   background: #97cba9;
+   text-align: center;
+   transition: 1s;
+}
+.password-block__container {
+   width: 90%;
+   margin: 0 auto;
+}
+.password-block__title {
+   font-size: 27px;
+}
+.password-block__input {
+   display: block;
+   width: 100%;
+   font-size:25px;
+   outline: none;
+   padding: 15px;
+   border-bottom: 1.5px solid #fff;
+}
+.password-block__action-block {
+   margin-top: 30px;
+   display: flex;
+   justify-content: space-between;
+}
+.action-block__btn-container > button {
+   width: 130px;
+   padding: 7px;
+   background: #fff;
+   border-radius: 5px;
+   transition: 0.5s;
+}
+.action-block__btn-container {
+   display: flex;
+   gap: 40px;
+}
+.action-block__title {
+   font-size: 25px;
+}
+.action-block__btn-regenerate:hover , .action-block__btn-copy:hover {
+    /* border: 1px solid #fff; */
+    background: black;
+    color: #fff;
+}
+.password-block__configuration{
+    margin-top: 15px;
+}
+.configuration__length-text{
+        font-size: 19px;
+}
+.password-block__configuration{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.configuration__input-length{
+    width: 70%;
+}
+.configuration__password-parameters{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.configuration__password-parameters > input {
+    width: 20px;
+    height: 20px;
+}
+/* ----------------------------------------------------------- PASSWORD */
